@@ -4,14 +4,15 @@ import {
 } from 'reactstrap';
 
 const AnyCard = (props) => {
+  console.log(props);
   return (
-    <div>
+    <div className='cardT'>
       <Card>
         <CardBody>
             <h1>Name: {props.name}</h1>
-            <p>Born: {props.birth_year}</p>
-            <p>Height: {props.height}</p>
-            <p>Weight: {props.weight}</p>
+            <p>Born: {props.birth_year}<br />
+            Height: {props.height}<br />
+            Weight: {props.mass}</p>
         </CardBody>
       </Card>
     </div>

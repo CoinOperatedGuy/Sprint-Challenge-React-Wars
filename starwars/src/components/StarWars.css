@@ -1,0 +1,30 @@
+.card-container {
+    border: red solid 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch; */
+}
+
+.cardT {
+    border: white solid 2px;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.cardT h1 {
+    font-size: 3rem;
+    background-color: grey;
+    /* border: greenyellow solid 1px; */
+}
+
+.cardT p {
+    font-size: 2rem;
+    background-color: grey;
+}
+
