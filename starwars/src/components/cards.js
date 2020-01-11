@@ -11,12 +11,11 @@ const Cards = () => {
             })
             .catch(err => console.log(err));
       }, )
-      const dataResults = res.data.results;
       const [sWData] = useState(dataResults);
     return (
         <div>
-            {sWData.map((index) => {
-                return <Card key={index}/>
+            {sWData.map((index, name) => {
+                return <Card key={index} name={name}/>
             })}
         </div>
     )
