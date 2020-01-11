@@ -4,7 +4,7 @@ import {
   CardTitle, CardSubtitle
 } from 'reactstrap';
 
-const Card = (props) => {
+const anyCard = (props) => {
   return (
     <div>
       <Card>
@@ -19,4 +19,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default anyCard;

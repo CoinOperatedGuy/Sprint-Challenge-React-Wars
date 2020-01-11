@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from './card';
+import anyCard from './card';
 
 const Cards = () => {
     useEffect(() => {
@@ -10,12 +10,12 @@ const Cards = () => {
               console.log(dataResults);
             })
             .catch(err => console.log(err));
-      }, )
-      const [sWData] = useState(dataResults);
+      }, [])
+      const [sWData] = useState([]);
     return (
         <div>
             {sWData.map((index, name) => {
-                return <Card key={index} name={name}/>
+                return <anyCard key={index} name={name}/>
             })}
         </div>
     )
