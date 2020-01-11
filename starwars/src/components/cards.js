@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import anyCard from './card';
+import AnyCard from './card';
 
-const Cards = () => {
+const Cards = (props) => {
+    const [sWData, setsWData] = useState([]);
     useEffect(() => {
         axios.get('https://swapi.co/api/people/')
             .then(res => {
-              const dataResults = res.data.results;
-              console.log(dataResults);
+            //   const dataResults = res.data.results;
+            //   console.log(dataResults);
+              setsWData(res.data.results)
             })
             .catch(err => console.log(err));
       }, [])
-      const [sWData] = useState([]);
-    return (
+      
+    
+      return (
         <div>
-            {sWData.map((index, name) => {
-                return <anyCard key={index} name={name}/>
+            {sWData.map(() => {
+                return <AnyCard />
             })}
         </div>
     )

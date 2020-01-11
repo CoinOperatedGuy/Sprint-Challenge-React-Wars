@@ -1,22 +1,21 @@
 import React from 'react';
 import {
-  Card, CardText, CardBody,
-  CardTitle, CardSubtitle
+  Card, CardBody
 } from 'reactstrap';
 
-const anyCard = (props) => {
+const AnyCard = (props) => {
   return (
     <div>
       <Card>
         <CardBody>
-            <CardTitle>Name: {props.name}</CardTitle>
-            <CardSubtitle>Born: {props.birth_year}</CardSubtitle>
-            <CardText>Height: {props.height}</CardText>
-            <CardText>Weight: {props.weight}</CardText>
+            <h1>Name: {props.name}</h1>
+            <p>Born: {props.birth_year}</p>
+            <p>Height: {props.height}</p>
+            <p>Weight: {props.weight}</p>
         </CardBody>
       </Card>
     </div>
   );
 };
 
-export default anyCard;
+export default AnyCard;
