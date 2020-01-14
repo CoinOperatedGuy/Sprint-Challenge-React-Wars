@@ -25,15 +25,20 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+ReactJS is a versatile JavaScript framework. It can be added to various other libraries like Web pack and its plug-ins, React Native, Flux, Reflux etc. It was created to helkp ease the change of information in State.
 - [ ] What does it mean to _think_ in react?
-
+React makes you think about apps as you build them. To think in React, you have to remember five things: 
+    1. Break the UI into a component layout.
+    2. Build a static version in React.
+    3. Identify the minimal (but complete) representation of UI State.
+    4. Identify where your State should go.
+    and 5. Add inverse data flow.
 - [ ] Describe state.
-
+State is essentially any data that relates to the internals of a React component, but has nothing to do with the outside world. 
 - [ ] Describe props.
-
+Props are data that the React.js component depends on to function and render correctly.
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects. The Effect Hook lets you perform side effects in function components.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
