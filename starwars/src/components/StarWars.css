@@ -1,5 +1,5 @@
 .card-container {
-    border: red solid 2px;
+    /* border: red solid 2px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
